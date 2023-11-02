@@ -1,5 +1,10 @@
 #!/bin/bash
 
+# bootloader
+pacman -Sy --noconfirm --needed grub
+grub-install --boot-directory=/boot ${main_disk}
+grub-mkconfig -o /boot/grub/grub.cfg
+
 
 #turn on parallel pacman downloads
 sed -i 's/^#ParallelDownloads/ParallelDownloads/' /etc/pacman.conf

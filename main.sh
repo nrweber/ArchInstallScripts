@@ -54,14 +54,6 @@ pacstrap /mnt --noconfirm --needed base linux linux-firmware base-devel gvim wpa
 # The -U make it use UUIDs for the drives
 genfstab -U /mnt >> /mnt/etc/fstab
 
-# bootloader
-pacman -S --noconfirm --needed grub
-if [[ ! -d "/sys/firmware/efi" ]]; then
-    grub-install --boot-directory=/mnt/boot ${main_disk}
-else
-    pacstrap /mnt efibootmgr --noconfirm --needed
-fi
-
 
 # Copy scripts to mount folder
 temp_folder=/nic_installscripts/
