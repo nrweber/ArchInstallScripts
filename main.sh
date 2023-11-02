@@ -1,9 +1,9 @@
 #!/bin/bash
 
 main_disk=/dev/sda
-efi_partition=/dev/sda1
-swap_partition=/dev/sda2
-main_partition=/dev/sda3
+efi_partition=/dev/sda2
+swap_partition=/dev/sda3
+main_partition=/dev/sda4
 
 # Setup wifi
 ### TBD
@@ -44,7 +44,7 @@ mount --mkdir ${efi_partition} /mnt/boot
 
 # make sure reflector is installed and run it to update mirror list
 pacman -Sy --noconfirm --needed reflector
-reflector --verbose --country 'United States' -l 5 --sort rate --save /etc/pacman.d/mirrorlist
+reflector --verbose --country 'United States' -l 10 --sort rate --save /etc/pacman.d/mirrorlist
 
 
 # Install my base packages
