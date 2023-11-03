@@ -1,5 +1,8 @@
 #!/bin/bash
 
+main_desk=/dev/sda
+
+
 # bootloader
 pacman -Sy --noconfirm --needed grub
 grub-install ${main_disk}
