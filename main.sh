@@ -59,12 +59,13 @@ genfstab -U /mnt >> /mnt/etc/fstab
 temp_folder=/nic_installscripts/
 mkdir /mnt/${temp_folder} 
 cp 1_system.sh /mnt/${temp_folder}
+cp 2_user.sh /mnt/${temp_folder}
 
 # chroot to setup system configurations
 arch-chroot /mnt /${temp_folder}/1_system.sh
 
 # chroot to setup user configurations
-#arch-chroot /mnt 2_user.sh
+arch-chroot /mnt /usr/bin/runuser -u nic -- 2_user.sh
 
 #remove temp scripts
 rm -fr /mnt/${temp_folder}
