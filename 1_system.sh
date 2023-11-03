@@ -1,6 +1,6 @@
 #!/bin/bash
 
-main_desk=/dev/sda
+main_disk=/dev/sda
 
 
 # bootloader
