@@ -2,7 +2,7 @@
 
 # bootloader
 pacman -Sy --noconfirm --needed grub
-grub-install --boot-directory=/boot ${main_disk}
+grub-install ${main_disk}
 grub-mkconfig -o /boot/grub/grub.cfg
 
 
