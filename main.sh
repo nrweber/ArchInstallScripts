@@ -48,7 +48,38 @@ reflector --verbose --country 'United States' -l 10 --sort rate --save /etc/pacm
 
 
 # Install my base packages
-pacstrap /mnt --noconfirm --needed base linux linux-firmware base-devel gvim wpa_supplicant dhcpcd xorg-server xorg-xinit i3-wm i3status dmenu noto-fonts xorg-xrandr git chromium qutebrowser neofetch zathura zathura-pdf-poppler alsa-utils feh mpv jq openssh htop man-db xsel make 
+pacstrap /mnt --noconfirm --needed  \
+    base \
+    linux  \
+    linux-firmware  \
+    base-devel  \
+    gvim  \
+    wpa_supplicant  \
+    dhcpcd  \
+    xorg-server  \
+    xorg-xinit  \
+    i3-wm  \
+    i3status  \
+    dmenu  \
+    noto-fonts  \
+    xorg-xrandr  \
+    git  \
+    chromium  \
+    qutebrowser  \
+    neofetch  \
+    zathura  \
+    zathura-pdf-poppler  \
+    alsa-utils  \
+    feh  \
+    mpv  \
+    jq  \
+    openssh  \
+    htop  \
+    man-db  \
+    xsel  \
+    make \
+    docker \
+    docker-compose
 
 # Create fstab file to mount drives
 # The -U make it use UUIDs for the drives

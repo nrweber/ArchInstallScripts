@@ -39,3 +39,6 @@ sed -i 's/^# %wheel ALL=(ALL:ALL) NOPASSWD: ALL/%wheel ALL=(ALL:ALL) NOPASSWD: A
 
 # Enable dhcpcd 
 systemctl enable dhcpcd
+
+# Enable docker
+systemctl enable docker
