@@ -8,7 +8,6 @@ pacman -Sy --noconfirm --needed grub
 grub-install ${main_disk}
 grub-mkconfig -o /boot/grub/grub.cfg
 
-
 #turn on parallel pacman downloads
 sed -i 's/^#ParallelDownloads/ParallelDownloads/' /etc/pacman.conf
 
@@ -32,10 +31,12 @@ useradd -m -g wheel nic
 echo "Set password for nic account"
 passwd nic
 
+# add user to docker group
+usermod -aG docker nic
+
 # Allow wheel grup to do sudo commands
 sed -i 's/^# %wheel ALL=(ALL) NOPASSWD: ALL/%wheel ALL=(ALL) NOPASSWD: ALL/' /etc/sudoers
 sed -i 's/^# %wheel ALL=(ALL:ALL) NOPASSWD: ALL/%wheel ALL=(ALL:ALL) NOPASSWD: ALL/' /etc/sudoers
-
 
 # Enable dhcpcd 
 systemctl enable dhcpcd
