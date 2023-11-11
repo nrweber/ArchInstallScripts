@@ -79,7 +79,8 @@ pacstrap /mnt --noconfirm --needed  \
     xsel  \
     make \
     docker \
-    docker-compose
+    docker-compose \
+    rust
 
 # Create fstab file to mount drives
 # The -U make it use UUIDs for the drives
