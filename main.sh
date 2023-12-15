@@ -54,7 +54,7 @@ pacstrap /mnt --noconfirm --needed  \
     linux-firmware  \
     base-devel  \
     gvim  \
-    iwctl \
+    iwd \
     dhcpcd  \
     xorg-server  \
     xorg-xinit  \
