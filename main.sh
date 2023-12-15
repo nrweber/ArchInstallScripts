@@ -78,6 +78,7 @@ pacstrap /mnt --noconfirm --needed  \
     man-db  \
     xsel  \
     make \
+    efibootmgr \
     docker \
     docker-compose \
     rust

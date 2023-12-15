@@ -1,11 +1,11 @@
 #!/bin/bash
 
-main_disk=/dev/sda
+main_disk=/dev/nvme0n1
 
 
 # bootloader
 pacman -Sy --noconfirm --needed grub
-grub-install ${main_disk}
+grub-install --efi-directory=/boot ${main_disk}
 grub-mkconfig -o /boot/grub/grub.cfg
 
 #turn on parallel pacman downloads
