@@ -1,9 +1,9 @@
 #!/bin/bash
 
-main_disk=/dev/sda
-efi_partition=/dev/sda2
-swap_partition=/dev/sda3
-main_partition=/dev/sda4
+main_disk=/dev/nvme0n1
+efi_partition=/dev/nvme0n1p2
+swap_partition=/dev/nvme0n1p3
+main_partition=/dev/nvme0n1p4
 
 # Setup wifi
 ### TBD
