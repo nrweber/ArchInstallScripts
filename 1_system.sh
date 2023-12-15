@@ -44,3 +44,5 @@ systemctl enable dhcpcd
 # Enable docker
 systemctl enable docker
 
+# Enable iwd which will do wifi stuff for iwctl 
+systemctl enable iwd
