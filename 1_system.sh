@@ -44,6 +44,8 @@ sed -i 's/^#PermitRootLogin prohibit-password/PermitRootLogin no/' /etc/ssh/sshd
 echo "" >> /etc/ssh/sshd_config
 echo "AllowUsers nic" >> /etc/ssh/sshd_config
 
+# Enable sshd 
+systemctl enable sshd
 
 # Enable dhcpcd 
 systemctl enable dhcpcd
@@ -53,3 +55,4 @@ systemctl enable docker
 
 # Enable iwd which will do wifi stuff for iwctl 
 systemctl enable iwd
+

@@ -79,6 +79,7 @@ pacstrap /mnt --noconfirm --needed  \
     xsel  \
     make \
     efibootmgr \
+    tmux \
     neovim \
     docker \
     docker-compose \
