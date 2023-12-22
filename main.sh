@@ -79,6 +79,7 @@ pacstrap /mnt --noconfirm --needed  \
     xsel  \
     make \
     efibootmgr \
+    neovim \
     docker \
     docker-compose \
     rust \
