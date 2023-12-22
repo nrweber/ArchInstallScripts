@@ -81,7 +81,10 @@ pacstrap /mnt --noconfirm --needed  \
     efibootmgr \
     docker \
     docker-compose \
-    rust
+    rust \
+    dotnet-sdk \
+    dotnet-sdk-7.0
+
 
 # Create fstab file to mount drives
 # The -U make it use UUIDs for the drives

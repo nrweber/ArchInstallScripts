@@ -38,6 +38,13 @@ usermod -aG docker nic
 sed -i 's/^# %wheel ALL=(ALL) NOPASSWD: ALL/%wheel ALL=(ALL) NOPASSWD: ALL/' /etc/sudoers
 sed -i 's/^# %wheel ALL=(ALL:ALL) NOPASSWD: ALL/%wheel ALL=(ALL:ALL) NOPASSWD: ALL/' /etc/sudoers
 
+# SSH config
+sed -i 's/^#Port 22/Port 4242/' /etc/ssh/sshd_config
+sed -i 's/^#PermitRootLogin prohibit-password/PermitRootLogin no/' /etc/ssh/sshd_config
+echo "" >> /etc/ssh/sshd_config
+echo "AllowUsers nic" >> /etc/ssh/sshd_config
+
+
 # Enable dhcpcd 
 systemctl enable dhcpcd
 

@@ -24,12 +24,3 @@ echo "Git config"
 echo "Fixing dotfiles git setup"
 ./resetOriginToUseSSH.sh
 
-# Dotnet install
-cd /home/nic
-echo "Setup dotnet SDK"
-curl -L https://dot.net/v1/dotnet-install.sh --output dotnet-install.sh
-chmod +x dotnet-install.sh
-./dotnet-install.sh --channel 7.0
-rm dotnet-install.sh
-
-
