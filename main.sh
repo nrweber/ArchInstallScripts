@@ -64,6 +64,7 @@ pacstrap /mnt --noconfirm --needed  \
     noto-fonts  \
     xorg-xrandr  \
     git  \
+    fzf \
     chromium  \
     qutebrowser  \
     neofetch  \
