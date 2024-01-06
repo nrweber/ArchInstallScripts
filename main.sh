@@ -86,7 +86,9 @@ pacstrap /mnt --noconfirm --needed  \
     docker-compose \
     rust \
     dotnet-sdk \
-    dotnet-sdk-7.0
+    aspnet-runtime \
+    dotnet-sdk-7.0 \
+    aspnet-runtime-7.0
 
 
 # Create fstab file to mount drives
