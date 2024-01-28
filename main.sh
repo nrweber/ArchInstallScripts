@@ -88,7 +88,8 @@ pacstrap /mnt --noconfirm --needed  \
     dotnet-sdk \
     aspnet-runtime \
     dotnet-sdk-7.0 \
-    aspnet-runtime-7.0
+    aspnet-runtime-7.0 \
+    go
 
 
 # Create fstab file to mount drives
