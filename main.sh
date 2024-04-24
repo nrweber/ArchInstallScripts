@@ -71,6 +71,7 @@ pacstrap /mnt --noconfirm --needed  \
     zathura  \
     zathura-pdf-poppler  \
     alsa-utils  \
+    pulseaudio-alsa \
     feh  \
     mpv  \
     jq  \
