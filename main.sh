@@ -88,8 +88,8 @@ pacstrap /mnt --noconfirm --needed  \
     rust \
     dotnet-sdk \
     aspnet-runtime \
-    dotnet-sdk-7.0 \
-    aspnet-runtime-7.0 \
+    dotnet-sdk-8.0 \
+    aspnet-runtime-8.0 \
     go
 
 
