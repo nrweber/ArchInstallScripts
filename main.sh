@@ -65,6 +65,7 @@ pacstrap /mnt --noconfirm --needed  \
     xorg-xrandr  \
     git  \
     fzf \
+    ghostty \
     chromium  \
     qutebrowser  \
     neofetch  \
@@ -83,13 +84,14 @@ pacstrap /mnt --noconfirm --needed  \
     efibootmgr \
     tmux \
     neovim \
+    ripgrep \
     docker \
     docker-compose \
     rust \
     dotnet-sdk \
     aspnet-runtime \
-    dotnet-sdk-8.0 \
-    aspnet-runtime-8.0 \
+    dotnet-sdk-9.0 \
+    aspnet-runtime-9.0 \
     go
 
 
